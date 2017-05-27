@@ -1,0 +1,115 @@
+.form 
+{
+	height: 1000px;
+	margin-top: 20px;
+}
+textarea.form-control
+{
+	height: 140px;
+}
+.border
+{
+	width: 100%;
+	border-top: 1px dashed #c6baba;
+	margin: 5px 0px;
+}
+#payt4,
+#payt3,
+#payt2,
+#payt1 
+{
+	display: none;
+}
+[for="payt4"],
+[for="payt2"],
+[for="payt3"],
+[for="payt1"] {
+  position: relative;
+  display: inline-block;
+  margin-left: 11px;
+  width: 35px;
+  height: 10px;
+  border-radius: 7px;
+  background: #d8130b;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.2);
+  cursor: pointer;
+}
+[for="payt4"]:before,
+[for="payt3"]:before,
+[for="payt2"]:before,
+[for="payt1"]:before {
+  content: "";
+  position: absolute;
+  left: -8px; top: -3px;
+  display: block;
+  border-radius: 20px;
+  width: 16px;
+  height: 16px;
+  background: #dfe5d7 radial-gradient(#dfe5d7, #b3bead 80%, #fff 80%) no-repeat 50% 50%;
+  transition: .5s;
+}
+#payt4:checked ~ [for="payt4"]:before,
+#payt3:checked ~ [for="payt3"]:before,
+#payt2:checked ~ [for="payt2"]:before,
+#payt1:checked ~ [for="payt1"]:before {
+  left: 27px;
+  
+}
+#payt4:checked ~ [for="payt4"],
+#payt3:checked ~ [for="payt3"],
+#payt2:checked ~ [for="payt2"],
+#payt1:checked ~ [for="payt1"]
+{
+  background: #5cb85c;
+}
+.file_4,
+.file_3,
+.file_2,
+.file_1 
+{
+  display: none;
+  transition: .5s;
+}
+#payt4:checked ~ .file_4,
+#payt3:checked ~ .file_3,
+#payt2:checked ~ .file_2,
+#payt1:checked ~ .file_1 {
+  display: block;
+  transition: .5s;
+}
+.input_margin
+{
+	margin-top: 7px;
+}
+.center
+{
+	margin: 0 auto;
+}
+.demo_s
+{
+	background: #c1bcbc;
+	display: inline-block;
+	position: fixed;
+	margin-right: 40px;
+	top: 20px;
+  overflow: auto;
+	
+}
+
+.radio > ul > li
+{
+  list-style: none;
+}
+
+
+
+/*********Sait zone****************/
+#bg-image > img
+{
+ width: 100%;
+ height: 100%;
+}
+
+
+
+/*********Sait zone*********************/
